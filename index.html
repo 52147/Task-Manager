@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Task Manager</h1>
+      </header>
+      <main>
+        <div class="add-task-box">
+            <input type="text" id="taskTitle" placeholder="Task title">
+            <input type="text" id="taskDescription" placeholder="Task description">
+            <button onclick="addTask()">Add Task</button>
+          </div>
+          
+          <div class="complete-all-button-container">
+            <button class="complete-all-button" onclick="completeAllTasks()">Complete All Tasks</button>
+        </div>
+                    
+          <div id="taskList"></div>
+          
+          <!-- The task list will be populated by JavaScript -->
+        </div>
+      </main>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
